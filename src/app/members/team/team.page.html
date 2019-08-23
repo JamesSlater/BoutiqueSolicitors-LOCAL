@@ -1,22 +1,21 @@
-<div class="nav-wrapper" style="background: white;">
-  <ion-header class="navbar">
-    <div class="icons">
-      <ion-buttons slot="start">
-        <ion-menu-button color="tertiary"></ion-menu-button>
-      </ion-buttons>
-      <img src="assets/logo.png">
-    </div>
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
+    <ion-img class="logo" src="assets/logo.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
 
-  </ion-header>
-</div>
-<h2 style="text-align: center;">Meet the Team</h2>
+<div class="fix">
+<h2>Meet the Team</h2>
 <ion-searchbar [formControl]="searchControl" (ionChange)="onSearchInput()" animated="true"></ion-searchbar>
 <div *ngIf="searching" class="spinner-container">
   <ion-spinner></ion-spinner>
 </div>
+</div>
 <ion-content text-center>
 
-  <br>
   <ion-list>
     <ion-item color="medium" text-wrap *ngFor="let team of teams">
       <ion-avatar class="avatar" slot="start"><img src="{{ team.headshot }}"></ion-avatar>

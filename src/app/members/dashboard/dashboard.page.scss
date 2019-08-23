@@ -1,7 +1,7 @@
 .navbar {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80px, 50% 100%, 0 80px);
   clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
-  padding: 40px 10px 20px 10px;
+  padding: 40px 10px 40px 10px;
   background: var(--gradient-bg);
   // padding-top: env(safe-area-inset-top);
 }
@@ -80,7 +80,7 @@ ion-menu-button {
   position: absolute;
   top: 0;
   left: 0
-  
+
 }
 
 .settings {

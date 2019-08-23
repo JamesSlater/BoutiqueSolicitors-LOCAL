@@ -13,21 +13,6 @@ ion-buttons {
 }
 
 
-.navbar img {
-
-    height: 9vh;
-    width: 12vh;
-    margin: 0 auto;
-    display: block;
-}
-
-ion-img {
-  //  position: absolute;
-    height: 12vh;
-    width: 15vh;
-    margin: 0 auto;
-}
-
 .spinner-container {
   width: 100%;
   text-align: center;
@@ -35,5 +20,8 @@ ion-img {
 }
 
 .fix {
-  background: white;
+  background: var(--ion-color-white);
+}
+ion-item {
+  margin: 1% 0;
 }
