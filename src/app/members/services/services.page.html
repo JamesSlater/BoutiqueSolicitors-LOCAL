@@ -1,0 +1,30 @@
+<div class="nav-wrapper" style="background: white;">
+  <ion-header class="navbar">
+  
+      <ion-buttons slot="start">
+          <ion-menu-button color="tertiary"></ion-menu-button>
+        </ion-buttons>
+
+    <img src="assets/logo.png">
+  </ion-header>
+</div>
+<div class="fix">
+  <br>
+  <h2 style="text-align: center;">Search for a service</h2>
+  <ion-searchbar [formControl]="searchControl" (ionChange)="onSearchInput()" animated="true">
+  </ion-searchbar>
+  <div *ngIf="searching" class="spinner-container">
+    <ion-spinner></ion-spinner>
+  </div>
+</div>
+<ion-content text-center>
+
+  <br>
+
+  <ion-list>
+    <ion-item color="primary" style="border: 1px solid #002a6e" *ngFor="let item of items" (click)="viewDetails(item)"> 
+      {{ item.title }}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,48 @@
+.activeTab {
+  background: var(--gradient-bg);
+  color: white;
+  height: 100%;
+}
+
+
+.logo {
+  height: 8vh;
+  width: 10vh;
+  margin: 0 auto;
+}
+
+.navbar {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  padding: 40px 10px 20px 10px;
+  background: var(--gradient-bg);
+  // padding-top: env(safe-area-inset-top);
+}
+
+
+
+ion-buttons {
+  position: absolute;
+
+}
+
+
+// .navbar img {
+
+//     height: 9vh;
+//     width: 12vh;
+//     margin: 0 auto;
+//     display: block;
+// }
+ion-card {
+   // border: 0.5px solid #3299cc;
+   box-shadow: var(--box-shadow);
+}
+
+p, h1 {
+margin-bottom: 2vw;
+}
+
+.aboutcard {
+margin-bottom: 20%;
+}

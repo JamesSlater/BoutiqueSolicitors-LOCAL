@@ -1,0 +1,33 @@
+<ion-content text-center padding fullscreen scroll-y="false">
+
+  <ion-grid>
+
+    <ion-img text-center class="login-logo" src="assets/logo.png"></ion-img>
+
+    <div class="login-inputs">
+      <h1 text-center class="login-title">Login</h1>
+
+      <ion-item margin class="login-name animate border-r">
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="email" type="text" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item margin class="login-pass animate border-r">
+        <ion-icon name="lock" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="pass" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-label>{{ error }}</ion-label>
+
+    </div>
+
+    <div text-center margin class="login-button">
+      <ion-button color="tertiary" size="large" (click)="login()" expand="block" class="animate border-r">Login</ion-button>
+    </div>
+
+    <ion-button (click)="help()" size="large" fill="clear" padding class="login-help">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </ion-button>
+
+  </ion-grid>
+</ion-content>

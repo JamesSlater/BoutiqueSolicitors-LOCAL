@@ -1,0 +1,17 @@
+.active-item {
+    border-left: 8px solid var(--ion-color-tertiary);
+   }
+
+
+
+   ion-title {
+       float: left;
+   }
+
+   .logout {
+       float: right;
+   }
+
+   .gradient {
+       background: linear-gradient(135deg, #3299cc 0%,#5b3192 100%);
+   }

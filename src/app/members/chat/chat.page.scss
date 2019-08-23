@@ -1,0 +1,35 @@
+ion-toolbar {
+  background: var(--gradient-bg);
+}
+// .nav-wrapper {
+//   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+// }
+
+ion-buttons {
+  position: absolute;
+}
+
+ion-img {
+    //position: absolute;
+    // height: 12vh;
+    // width: 15vh;
+    height: 8vh;
+    width: 10vh;
+    margin: 0 auto;
+}
+
+.chats {
+    min-height: 35%;
+}
+
+.settings {
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  height: 25px;
+  width: 25px;
+}
+
+.newConnection {
+  margin-top: 35%;
+}

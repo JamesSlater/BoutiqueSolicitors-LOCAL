@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Products
+    </ion-list-header>
+    <ion-item  *ngFor="let product of products | async">
+      <h1>{{ product.name }}</h1>
+      <p>{{ product.description }}</p> 
+      <p>{{ product.quantity }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

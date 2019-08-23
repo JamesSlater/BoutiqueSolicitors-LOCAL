@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="var(--gradient-bg)">
+    <ion-buttons slot="start">
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-icon (click)="settings()" class="settings" color="tertiary" name="settings"></ion-icon> -->
+    <ion-img src="assets/logo.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content text-center>
+
+  <ion-tabs>
+    <ion-tab-bar color="primary" slot="top">
+      <ion-tab-button routerDirection="forward" (click)="chats()">
+        <ion-icon name="chatbubbles"></ion-icon>
+        <ion-label>Chats</ion-label>
+      </ion-tab-button>
+      <ion-tab-button class="activeTab" (click)="connections()">
+        <ion-icon name="contacts"></ion-icon>
+        <ion-label>Connections</ion-label>
+      </ion-tab-button>
+      <ion-tab-button (click)="add()">
+        <ion-icon name="person-add"></ion-icon>
+        <ion-label>Add Users</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <h1>Connections</h1>
+  <!-- <h3>Your Chat PIN is: {{ pin }} </h3> -->
+
+  <div class="chats"></div>
+
+  <ion-button color="success" (click)="chatroom()">MAIN CHAT ROOM</ion-button>
+
+</ion-content>

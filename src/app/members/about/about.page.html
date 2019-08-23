@@ -1,0 +1,52 @@
+  <ion-header>
+    <ion-toolbar color="medium" [scrollHide]="headerScrollConfig" [scrollContent]="pageContent">
+      <ion-buttons slot="start">
+        <ion-menu-button color="tertiary"></ion-menu-button>
+      </ion-buttons>
+      <ion-img class="logo" src="assets/logo.png"></ion-img>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content #pageContent>
+
+
+  <ion-card class="aboutcard">
+    <ion-img src="assets/pic1.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>About Us</ion-card-title>
+      <ion-card-subtitle>BOUTIQUE SOLICITORS</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>BOUTIQUE Immigration Lawyers of London have 'years of specialist Legal experience at your disposal'.</p>
+      <p>Established in 1998 as a niche human rights firm – we have a trusted record of excellent service. BOUTIQUE are
+        frequently recommended by a long list of happy clients. We are passionate about our work and dedicated to
+        achieving life-changing results.</p>
+      <h2>OUR PROMISE</h2>
+      <p><em>"If you come to BOUTIQUE, you will get the result you want. If there is a way, we find it and do it for
+          you. If there is no way we tell you, and don’t waste your time. Where there is a way, we will deliver."</em>
+      </p>
+      <p><strong>Lawrence Lupin – Founding Director</strong></p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+<ion-toolbar style="position: fixed; bottom: 0;">
+  <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button class="activeTab">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>About Us</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="dashboard()" class="adjustHeight">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="contact()" class="adjustHeight">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Contact Us</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-toolbar>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="secondary" mode="ios">
+    <ion-buttons>
+    <ion-back-button defaultHref="/chat"></ion-back-button>
+  <ion-title>Boutique Chat Room</ion-title>
+</ion-buttons>   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content>
+  <div class="chat" *ngFor="let chat of chatRef | async">
+    <div class="me" *ngIf="uid == chat.UserID">
+      {{ chat.Message }}
+      <div class="time" text-right>{{ chat.Timestamp.toDate().toLocaleString() }}</div>
+    </div>
+    
+
+    <div class="you" *ngIf="uid != chat.UserID">
+      <span class="name">
+        {{ chat.Name }}
+      </span> <br> 
+      <div class="msg">
+      {{ chat.Message }}
+    </div>
+      <div class="time" text-right>{{ chat.Timestamp.toDate().toLocaleString() }}</div>
+
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-input placeholder="Type…" [(ngModel)]="text"></ion-input>
+    <ion-button (click)="send()" fill="clear" icon-only slot="end">
+      <ion-icon name="send"></ion-icon>
+    </ion-button> 
+  </ion-item>
+</ion-footer>

@@ -1,0 +1,67 @@
+ <ion-header>
+    <ion-toolbar color="medium">
+      <ion-buttons slot="start">
+        <ion-menu-button color="tertiary"></ion-menu-button>
+      </ion-buttons>
+      <ion-img class="logo" src="assets/logo.png"></ion-img>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content text-center>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Contact Us</ion-card-title>
+      <ion-card-subtitle>BOUTIQUE SOLICITORS</ion-card-subtitle>
+    </ion-card-header>
+    <br>
+    <ion-card-content>
+
+      <ion-label><b>Head Office: Wembley</b>
+        <br>
+        Boutique Immigration Solicitors, 10th Floor Tower, 1 Olympic Way, Wembley, Middlesex HA9 0NP
+        DX: 51165 Wembley Park
+        We are located just 5 minutes from Wembley Park Station. There is a car park behind our office.
+      </ion-label>
+
+      <br>
+      <br>
+
+      <ion-list text-left>
+        <ion-item>
+          <ion-label>Call us on 0800 3881 0211</ion-label>
+          <ion-fab-button color="secondary" slot="end" size="small" (click)="callAlert()">
+            <ion-icon name="call"></ion-icon>
+          </ion-fab-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email at admin@boutiquesolicitors.co.uk</ion-label>
+          <ion-fab-button color="secondary" slot="end" size="small" (click)="modalEmail()">
+            <ion-icon name="mail"></ion-icon>
+          </ion-fab-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-toolbar style="position: fixed; bottom: 0;"> 
+  <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="about()">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>About Us</ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="dashboard()">
+      <ion-icon color="blue" name="home"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="activeTab">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>Contact Us</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs></ion-toolbar>
+
+

@@ -1,0 +1,37 @@
+.navbar {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  padding: 40px 10px 20px 10px;
+  background: var(--gradient-bg);
+  // padding-top: env(safe-area-inset-top);
+}
+
+
+ion-buttons {
+  position: absolute;
+
+}
+
+
+.navbar img {
+
+    height: 9vh;
+    width: 12vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.avatar {
+      height: 100%;
+      width: 20%;
+}
+
+.spinner-container {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+ion-item {
+  color: black;
+}

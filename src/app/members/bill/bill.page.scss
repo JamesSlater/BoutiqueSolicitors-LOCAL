@@ -1,0 +1,39 @@
+.navbar {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  padding: 40px 10px 20px 10px;
+  background: var(--gradient-bg);
+  // padding-top: env(safe-area-inset-top);
+}
+
+
+ion-buttons {
+  position: absolute;
+
+}
+
+
+.navbar img {
+
+    height: 9vh;
+    width: 12vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.billing {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.billing ion-input {
+  border: 1px solid #000;
+  // transform: translateX(5%);
+}
+
+.billing ion-select {
+  border: 1px solid #000;
+  
+}

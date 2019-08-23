@@ -1,0 +1,41 @@
+<ion-split-pane>
+
+  <ion-menu contentId="content">
+
+    <ion-header>
+
+      <ion-toolbar color="medium" mode="ios">
+
+        <ion-title>MAIN MENU</ion-title>
+        <ion-button size="small" color="tertiary" fill="outline" class="logout" (click)="logout()">LOG OUT</ion-button>
+      </ion-toolbar>
+
+    </ion-header>
+
+
+
+    <ion-content padding color="medium">
+      <div class="gradient">
+    <ion-list style="background: linear-gradient(135deg, #3299cc 0%,#5b3192 100%);">
+
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+
+          <ion-item [routerLink]="p.url" routerDirection="root" color="medium" [class.active-item]="selectedPath.startsWith(p.url)">
+            <ion-icon [name]="p.icon" item-left></ion-icon>
+
+            {{p.title}}
+
+          </ion-item>
+
+        </ion-menu-toggle>
+
+    </ion-list>
+      </div>
+    </ion-content>
+
+  </ion-menu>
+
+
+  <ion-router-outlet id="content" main> </ion-router-outlet>
+
+</ion-split-pane>

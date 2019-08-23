@@ -1,0 +1,91 @@
+.navbar {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  padding: 40px 10px 20px 10px;
+  background: var(--gradient-bg);
+  // padding-top: env(safe-area-inset-top);
+}
+
+
+ion-buttons {
+  position: absolute;
+
+}
+
+
+.navbar img {
+
+    height: 9vh;
+    width: 12vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.items {
+  margin-top: 10%;
+  z-index: 100;
+}
+
+
+.profile ion-avatar {
+    margin: 0 auto;
+    height: 22vh;
+    width: 22vh;
+    box-shadow: var(--box-shadow);
+}
+
+#profilePic {
+  margin: 0 auto;
+  height: 22vh;
+  width: 22vh;
+
+}
+
+.profile h1 {
+    color: blue;
+}
+
+.about {
+  height: 55%;
+  width: 20%;
+}
+
+.itemBtns {
+  color: black;
+  font-size: 100%;
+  padding-right: 100%;
+}
+
+.activeTab {
+  background: var(--gradient-bg);
+  color: white;
+}
+
+.faketabs {
+  position: fixed;
+  left: 0;
+  // bottom: 5px;
+  bottom: 0;
+  right: 0;
+  background: var(--gradient-bg);
+
+}
+
+ion-menu-button {
+  position: absolute;
+  top: 0;
+  left: 0
+  
+}
+
+.settings {
+position: absolute;
+top: 20px;
+right: 0;
+color: var(--ion-color-white);
+}
