@@ -1,0 +1,15 @@
+ion-input, ion-textarea {
+  box-shadow: var(--box-shadow);
+  background: var(--ion-color-white);
+  color: var(--ion-color-black);
+}
+ion-input, ion-button {
+  border-radius: var(--border-r);
+  --border-radius: var(--border-r);
+}
+ion-textarea {
+  border-radius: 10px;
+}
+ion-button {
+  margin: 2% 0;
+}

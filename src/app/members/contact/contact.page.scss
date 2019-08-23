@@ -3,25 +3,11 @@
     color: white;
 }
 
-.logo {
-    height: 8vh;
-    width: 10vh;
-    margin: 0 auto;
-  } 
-  
   ion-buttons {
     position: absolute;
-  
+
   }
-  
-  
-  .navbar img {
-  
-      height: 9vh;
-      width: 12vh;
-      margin: 0 auto;
-      display: block;
-  }
+
 
   ion-card {
       padding-top: 5%;
@@ -33,8 +19,8 @@
   }
 
  ion-item ion-fab-button {
-     height: 75%;
-     width: 14%;
+     height: 30px;
+     width: 30px;
      margin-left: 0;
      color: var(--gradient-bg);
  }

@@ -1,7 +1,7 @@
 .navbar {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80px, 50% 100%, 0 80px);
   clip-path: polygon(0% 0%, 100% 0%, 100% 70px, 50% 100%, 0 70px);
-  padding: 40px 10px 20px 10px;
+  padding: 40px 10px 40px 10px;
   background: var(--gradient-bg);
   // padding-top: env(safe-area-inset-top);
 }
@@ -35,7 +35,7 @@ background: #f8f8f8;
   ion-input {
     background: var(--ion-color-white);
     // border: 1px solid #f1f1f1;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
   }
   ion-input,
   ion-button {

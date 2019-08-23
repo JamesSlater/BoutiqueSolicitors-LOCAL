@@ -1,18 +1,16 @@
-<div class="nav-wrapper" style="background: white;">
-  <ion-header class="navbar">
- 
-      <ion-buttons slot="start">
-          <ion-menu-button color="tertiary"></ion-menu-button>
-        </ion-buttons>
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
+    <ion-img class="logo" src="assets/logo.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
 
-    <img src="assets/logo.png">
-  </ion-header>
-</div>
- 
 <ion-content padding>
   <h3 text-center>Our Newsfeed</h3>
   <div text-center *ngIf="count">Found {{ count }} posts</div>
-  
+
   <ion-card *ngFor="let post of posts">
     <ion-card-header>
       <ion-card-title [innerHTML]="post.title.rendered"></ion-card-title>
@@ -25,10 +23,10 @@
       <ion-button expand="full" fill="clear" [routerLink]="['/members/menu/', 'news', post.id]" text-right>Read More...</ion-button>
     </ion-card-content>
   </ion-card>
- 
+
   <ion-infinite-scroll threshold="100px" (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content loadingText="Loading more posts...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
- 
+
 </ion-content>

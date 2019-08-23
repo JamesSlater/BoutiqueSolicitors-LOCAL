@@ -1,21 +1,29 @@
-<div id="navwrapper" style="background: white;">
-<ion-header class="navbar">
-  
+<!-- <div id="navwrapper" style="background: white;"> -->
+<!-- <ion-header class="navbar">
+
     <ion-buttons slot="start">
         <ion-menu-button color="tertiary"></ion-menu-button>
       </ion-buttons>
 
   <img src="assets/logo.png">
+</ion-header> -->
+
+
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button color="tertiary"></ion-menu-button>
+    </ion-buttons>
+    <ion-img class="logo" src="assets/logo.png"></ion-img>
+  </ion-toolbar>
 </ion-header>
-</div>
+
+<!-- </div> -->
 
 <ion-content padding text-center>
   <h2>Pay a bill</h2>
-  <br>
-  <ion-label>Our safe and secure app payment service couldn't be easier.</ion-label>
-  <br>
-  <br>
-  <div class="billing">
+  <p>Our safe and secure app payment service couldn't be easier.</p>
+  <div class="billing" margin>
   <form [formGroup]="billing" (ngSubmit)="logForm()">
     <ion-label>Title</ion-label>
     <ion-select formControlName="select" cancelText="Cancel" okText="Ok" placeholder="Please select...">
@@ -23,42 +31,36 @@
       <ion-select-option value="Mrs">Mrs</ion-select-option>
       <ion-select-option value="Miss">Miss</ion-select-option>
     </ion-select>
-    <br>
+
     <ion-label>First name</ion-label>
     <ion-input formControlName="firstName"></ion-input>
-
-    <br>
 
     <ion-label>Surname</ion-label>
     <ion-input formControlName="secondName"></ion-input>
 
-    <br>
-
     <ion-label>Postcode</ion-label>
     <ion-input formControlName="postCode"></ion-input>
-
-    <br>
 
     <ion-label>Email</ion-label>
     <ion-input formControlName="email" type="email"></ion-input>
 
-    <br>
-
     <ion-label>Telephone</ion-label>
     <ion-input type="number" formControlName="teleNo"></ion-input>
 
-    <br>
     <ion-label>Account No.</ion-label>
     <ion-input formControlName="accNo"></ion-input>
-    <br>
+
     <ion-label>Invoice / Statement No.</ion-label>
     <ion-input formControlName="invNo"required></ion-input>
-    <br>
+
     <ion-label>How much would you like to pay?</ion-label>
     <ion-input type="number" formControlName="payment" placeholder="£0.00"></ion-input>
-    <br>
+
   </form>
-  </div>
-  <ion-button [disabled]="!billing.valid">Make payment now</ion-button>
+
+</div>
+<div padding>
+  <ion-button [disabled]="!billing.valid" expand="block" size="large">Make payment now</ion-button>
+</div>
 
 </ion-content>

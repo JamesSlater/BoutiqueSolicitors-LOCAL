@@ -5,13 +5,32 @@
   background: var(--gradient-bg);
   // padding-top: env(safe-area-inset-top);
 }
-
+// .logo {
+//   height: 8vh;
+//   width: 10vh;
+//   margin: 0 auto;
+// }
 
 ion-buttons {
   position: absolute;
 
 }
-
+ion-select, ion-input {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-r);
+  --border-radius: var(--border-r);
+  background: var(--ion-color-white);
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+ion-button {
+  border-radius: var(--border-r);
+  --border-radius: var(--border-r);
+  margin-top: 4%;
+}
+ion-label {
+  font-size: 14px;
+}
 
 .navbar img {
 
@@ -22,18 +41,17 @@ ion-buttons {
 }
 
 .billing {
-  text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
+  text-align: center;
+
 
 }
 
 .billing ion-input {
-  border: 1px solid #000;
+  // border: 1px solid #000;
   // transform: translateX(5%);
 }
 
 .billing ion-select {
-  border: 1px solid #000;
-  
+  // border: 1px solid #000;
+
 }
